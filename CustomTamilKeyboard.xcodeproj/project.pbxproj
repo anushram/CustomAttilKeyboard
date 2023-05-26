@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC5B8F52A2125D2006623C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */; };
+		FCC5B8F72A2125D2006623C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */; };
+		FCC5B8F92A2125D2006623C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F82A2125D2006623C7 /* ViewController.swift */; };
+		FCC5B8FC2A2125D2006623C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC5B8FA2A2125D2006623C7 /* Main.storyboard */; };
+		FCC5B8FF2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8FD2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld */; };
+		FCC5B9012A2125D4006623C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC5B9002A2125D4006623C7 /* Assets.xcassets */; };
+		FCC5B9042A2125D4006623C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC5B9022A2125D4006623C7 /* LaunchScreen.storyboard */; };
+		FCC5B90F2A2125D4006623C7 /* CustomTamilKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B90E2A2125D4006623C7 /* CustomTamilKeyboardTests.swift */; };
+		FCC5B9192A2125D4006623C7 /* CustomTamilKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B9182A2125D4006623C7 /* CustomTamilKeyboardUITests.swift */; };
+		FCC5B91B2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B91A2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCC5B90B2A2125D4006623C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC5B8E92A2125D2006623C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC5B8F02A2125D2006623C7;
+			remoteInfo = CustomTamilKeyboard;
+		};
+		FCC5B9152A2125D4006623C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCC5B8E92A2125D2006623C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCC5B8F02A2125D2006623C7;
+			remoteInfo = CustomTamilKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCC5B8F12A2125D2006623C7 /* CustomTamilKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTamilKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FCC5B8F82A2125D2006623C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCC5B8FB2A2125D2006623C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCC5B8FE2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CustomTamilKeyboard.xcdatamodel; sourceTree = "<group>"; };
+		FCC5B9002A2125D4006623C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCC5B9032A2125D4006623C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FCC5B9052A2125D4006623C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC5B90A2A2125D4006623C7 /* CustomTamilKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTamilKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC5B90E2A2125D4006623C7 /* CustomTamilKeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTamilKeyboardTests.swift; sourceTree = "<group>"; };
+		FCC5B9142A2125D4006623C7 /* CustomTamilKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTamilKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCC5B9182A2125D4006623C7 /* CustomTamilKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTamilKeyboardUITests.swift; sourceTree = "<group>"; };
+		FCC5B91A2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTamilKeyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCC5B8EE2A2125D2006623C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9072A2125D4006623C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9112A2125D4006623C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCC5B8E82A2125D2006623C7 = {
+			isa = PBXGroup;
+			children = (
+				FCC5B8F32A2125D2006623C7 /* CustomTamilKeyboard */,
+				FCC5B90D2A2125D4006623C7 /* CustomTamilKeyboardTests */,
+				FCC5B9172A2125D4006623C7 /* CustomTamilKeyboardUITests */,
+				FCC5B8F22A2125D2006623C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCC5B8F22A2125D2006623C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCC5B8F12A2125D2006623C7 /* CustomTamilKeyboard.app */,
+				FCC5B90A2A2125D4006623C7 /* CustomTamilKeyboardTests.xctest */,
+				FCC5B9142A2125D4006623C7 /* CustomTamilKeyboardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCC5B8F32A2125D2006623C7 /* CustomTamilKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */,
+				FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */,
+				FCC5B8F82A2125D2006623C7 /* ViewController.swift */,
+				FCC5B8FA2A2125D2006623C7 /* Main.storyboard */,
+				FCC5B9002A2125D4006623C7 /* Assets.xcassets */,
+				FCC5B9022A2125D4006623C7 /* LaunchScreen.storyboard */,
+				FCC5B9052A2125D4006623C7 /* Info.plist */,
+				FCC5B8FD2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld */,
+			);
+			path = CustomTamilKeyboard;
+			sourceTree = "<group>";
+		};
+		FCC5B90D2A2125D4006623C7 /* CustomTamilKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC5B90E2A2125D4006623C7 /* CustomTamilKeyboardTests.swift */,
+			);
+			path = CustomTamilKeyboardTests;
+			sourceTree = "<group>";
+		};
+		FCC5B9172A2125D4006623C7 /* CustomTamilKeyboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCC5B9182A2125D4006623C7 /* CustomTamilKeyboardUITests.swift */,
+				FCC5B91A2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift */,
+			);
+			path = CustomTamilKeyboardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCC5B8F02A2125D2006623C7 /* CustomTamilKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC5B91E2A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboard" */;
+			buildPhases = (
+				FCC5B8ED2A2125D2006623C7 /* Sources */,
+				FCC5B8EE2A2125D2006623C7 /* Frameworks */,
+				FCC5B8EF2A2125D2006623C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTamilKeyboard;
+			productName = CustomTamilKeyboard;
+			productReference = FCC5B8F12A2125D2006623C7 /* CustomTamilKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCC5B9092A2125D4006623C7 /* CustomTamilKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC5B9212A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboardTests" */;
+			buildPhases = (
+				FCC5B9062A2125D4006623C7 /* Sources */,
+				FCC5B9072A2125D4006623C7 /* Frameworks */,
+				FCC5B9082A2125D4006623C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC5B90C2A2125D4006623C7 /* PBXTargetDependency */,
+			);
+			name = CustomTamilKeyboardTests;
+			productName = CustomTamilKeyboardTests;
+			productReference = FCC5B90A2A2125D4006623C7 /* CustomTamilKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCC5B9132A2125D4006623C7 /* CustomTamilKeyboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC5B9242A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboardUITests" */;
+			buildPhases = (
+				FCC5B9102A2125D4006623C7 /* Sources */,
+				FCC5B9112A2125D4006623C7 /* Frameworks */,
+				FCC5B9122A2125D4006623C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCC5B9162A2125D4006623C7 /* PBXTargetDependency */,
+			);
+			name = CustomTamilKeyboardUITests;
+			productName = CustomTamilKeyboardUITests;
+			productReference = FCC5B9142A2125D4006623C7 /* CustomTamilKeyboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCC5B8E92A2125D2006623C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FCC5B8F02A2125D2006623C7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FCC5B9092A2125D4006623C7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FCC5B8F02A2125D2006623C7;
+					};
+					FCC5B9132A2125D4006623C7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FCC5B8F02A2125D2006623C7;
+					};
+				};
+			};
+			buildConfigurationList = FCC5B8EC2A2125D2006623C7 /* Build configuration list for PBXProject "CustomTamilKeyboard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCC5B8E82A2125D2006623C7;
+			productRefGroup = FCC5B8F22A2125D2006623C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCC5B8F02A2125D2006623C7 /* CustomTamilKeyboard */,
+				FCC5B9092A2125D4006623C7 /* CustomTamilKeyboardTests */,
+				FCC5B9132A2125D4006623C7 /* CustomTamilKeyboardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCC5B8EF2A2125D2006623C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC5B9042A2125D4006623C7 /* LaunchScreen.storyboard in Resources */,
+				FCC5B9012A2125D4006623C7 /* Assets.xcassets in Resources */,
+				FCC5B8FC2A2125D2006623C7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9082A2125D4006623C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9122A2125D4006623C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCC5B8ED2A2125D2006623C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC5B8F92A2125D2006623C7 /* ViewController.swift in Sources */,
+				FCC5B8F52A2125D2006623C7 /* AppDelegate.swift in Sources */,
+				FCC5B8FF2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld in Sources */,
+				FCC5B8F72A2125D2006623C7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9062A2125D4006623C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC5B90F2A2125D4006623C7 /* CustomTamilKeyboardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC5B9102A2125D4006623C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC5B91B2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift in Sources */,
+				FCC5B9192A2125D4006623C7 /* CustomTamilKeyboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCC5B90C2A2125D4006623C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC5B8F02A2125D2006623C7 /* CustomTamilKeyboard */;
+			targetProxy = FCC5B90B2A2125D4006623C7 /* PBXContainerItemProxy */;
+		};
+		FCC5B9162A2125D4006623C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCC5B8F02A2125D2006623C7 /* CustomTamilKeyboard */;
+			targetProxy = FCC5B9152A2125D4006623C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FCC5B8FA2A2125D2006623C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC5B8FB2A2125D2006623C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FCC5B9022A2125D4006623C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCC5B9032A2125D4006623C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FCC5B91C2A2125D4006623C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCC5B91D2A2125D4006623C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCC5B91F2A2125D4006623C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomTamilKeyboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCC5B9202A2125D4006623C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomTamilKeyboard/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCC5B9222A2125D4006623C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTamilKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomTamilKeyboard";
+			};
+			name = Debug;
+		};
+		FCC5B9232A2125D4006623C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTamilKeyboard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomTamilKeyboard";
+			};
+			name = Release;
+		};
+		FCC5B9252A2125D4006623C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomTamilKeyboard;
+			};
+			name = Debug;
+		};
+		FCC5B9262A2125D4006623C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JMBR2RF2B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SampleCore.CustomTamilKeyboardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomTamilKeyboard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCC5B8EC2A2125D2006623C7 /* Build configuration list for PBXProject "CustomTamilKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC5B91C2A2125D4006623C7 /* Debug */,
+				FCC5B91D2A2125D4006623C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC5B91E2A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC5B91F2A2125D4006623C7 /* Debug */,
+				FCC5B9202A2125D4006623C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC5B9212A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC5B9222A2125D4006623C7 /* Debug */,
+				FCC5B9232A2125D4006623C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC5B9242A2125D4006623C7 /* Build configuration list for PBXNativeTarget "CustomTamilKeyboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCC5B9252A2125D4006623C7 /* Debug */,
+				FCC5B9262A2125D4006623C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FCC5B8FD2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FCC5B8FE2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodel */,
+			);
+			currentVersion = FCC5B8FE2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodel */;
+			path = CustomTamilKeyboard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FCC5B8E92A2125D2006623C7 /* Project object */;
+}
