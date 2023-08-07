@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HWJ-Fv-OMK" customClass="SpecialCharactersKeyboard" customModule="CustomTamilKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="252"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCW-nQ-Cal">
+                    <rect key="frame" x="0.0" y="197" width="386" height="55"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-tt-93O">
+                            <rect key="frame" x="8" y="10" width="82" height="35"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVd-Fv-LX7" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="82" height="35"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbc-ws-fOV">
+                                            <rect key="frame" x="0.0" y="0.0" width="82" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="ABC">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="changeLanguageWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="rCB-1s-Eet"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="FRX-2r-tS7">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                        </constraint>
+                                        <constraint firstAttribute="trailing" secondItem="mbc-ws-fOV" secondAttribute="trailing" id="LX9-21-hiz"/>
+                                        <constraint firstAttribute="bottom" secondItem="mbc-ws-fOV" secondAttribute="bottom" id="Qeo-JO-vef"/>
+                                        <constraint firstItem="mbc-ws-fOV" firstAttribute="top" secondItem="SVd-Fv-LX7" secondAttribute="top" id="VW2-ZL-ouu"/>
+                                        <constraint firstAttribute="width" constant="82" id="aj0-sL-HiN">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="112"/>
+                                        </constraint>
+                                        <constraint firstAttribute="bottom" secondItem="mbc-ws-fOV" secondAttribute="bottom" id="cTT-n4-NeS"/>
+                                        <constraint firstItem="mbc-ws-fOV" firstAttribute="leading" secondItem="SVd-Fv-LX7" secondAttribute="leading" id="eyT-4s-qDT"/>
+                                        <constraint firstItem="mbc-ws-fOV" firstAttribute="leading" secondItem="SVd-Fv-LX7" secondAttribute="leading" id="mQc-Nk-NFm"/>
+                                        <constraint firstAttribute="trailing" secondItem="mbc-ws-fOV" secondAttribute="trailing" id="oY0-FE-kae"/>
+                                        <constraint firstItem="mbc-ws-fOV" firstAttribute="top" secondItem="SVd-Fv-LX7" secondAttribute="top" id="yBv-gs-Eo8"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="FRt-oA-RUy">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                </constraint>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-Y7-rS0" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="296" y="8" width="82" height="39"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9V-pp-TGb">
+                                    <rect key="frame" x="0.0" y="0.0" width="82" height="39"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="return">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doneActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="9g2-1M-VIg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="tintColor"/>
+                            <constraints>
+                                <constraint firstItem="H9V-pp-TGb" firstAttribute="top" secondItem="7zd-Y7-rS0" secondAttribute="top" id="KGE-eE-fUf"/>
+                                <constraint firstAttribute="height" constant="39" id="KMY-yY-t77">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="H9V-pp-TGb" secondAttribute="trailing" id="MfE-NJ-neY"/>
+                                <constraint firstItem="H9V-pp-TGb" firstAttribute="leading" secondItem="7zd-Y7-rS0" secondAttribute="leading" id="Ve9-8G-kh6"/>
+                                <constraint firstAttribute="width" constant="82" id="pTD-Fu-zrp">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="112"/>
+                                </constraint>
+                                <constraint firstAttribute="bottom" secondItem="H9V-pp-TGb" secondAttribute="bottom" id="pvZ-oq-Yhp"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ods-bM-drQ" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="98" y="7" width="190" height="41"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b77-la-StX">
+                                    <rect key="frame" x="0.0" y="0.0" width="190" height="41"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="space">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="spaceWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="WtM-6c-M3N"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="b77-la-StX" secondAttribute="trailing" id="2RB-4y-lek"/>
+                                <constraint firstItem="b77-la-StX" firstAttribute="leading" secondItem="ods-bM-drQ" secondAttribute="leading" id="59S-NE-iTI"/>
+                                <constraint firstItem="b77-la-StX" firstAttribute="top" secondItem="ods-bM-drQ" secondAttribute="top" id="SOF-0S-qhJ"/>
+                                <constraint firstAttribute="bottom" secondItem="b77-la-StX" secondAttribute="bottom" id="XZO-Qk-U3A"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ods-bM-drQ" secondAttribute="bottom" constant="7" id="0VR-0E-vtn"/>
+                        <constraint firstItem="ods-bM-drQ" firstAttribute="leading" secondItem="7AZ-tt-93O" secondAttribute="trailing" constant="8" symbolic="YES" id="3Zy-n2-bjE"/>
+                        <constraint firstItem="7AZ-tt-93O" firstAttribute="leading" secondItem="bCW-nQ-Cal" secondAttribute="leading" constant="8" id="781-rn-aEs"/>
+                        <constraint firstItem="ods-bM-drQ" firstAttribute="top" secondItem="bCW-nQ-Cal" secondAttribute="top" constant="7" id="Ark-JW-oCe"/>
+                        <constraint firstItem="7zd-Y7-rS0" firstAttribute="leading" secondItem="ods-bM-drQ" secondAttribute="trailing" constant="8" symbolic="YES" id="Omt-jF-N99"/>
+                        <constraint firstAttribute="trailing" secondItem="7zd-Y7-rS0" secondAttribute="trailing" constant="8" id="TI8-zF-iRl"/>
+                        <constraint firstItem="7AZ-tt-93O" firstAttribute="top" secondItem="bCW-nQ-Cal" secondAttribute="top" constant="10" id="TPn-9I-8VR">
+                            <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                        </constraint>
+                        <constraint firstItem="7zd-Y7-rS0" firstAttribute="top" secondItem="bCW-nQ-Cal" secondAttribute="top" constant="8" id="XEj-cf-fXm">
+                            <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="7zd-Y7-rS0" secondAttribute="bottom" constant="8" id="hqx-eh-NQQ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="7AZ-tt-93O" secondAttribute="bottom" constant="10" id="isw-Da-yz5">
+                            <variation key="heightClass=regular-widthClass=regular" constant="5"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="55" id="tmR-jW-d2V">
+                            <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-Rx-CFk" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="144.66666666666666" width="40" height="38.333333333333343"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi3-Sd-Ny0">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="38.333333333333336"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="#+=">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="changeSpecialCharsWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="czU-0P-ppw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gi3-Sd-Ny0" secondAttribute="trailing" id="OgY-YJ-1d5"/>
+                        <constraint firstItem="gi3-Sd-Ny0" firstAttribute="top" secondItem="pXI-Rx-CFk" secondAttribute="top" id="X5O-Zq-ZRK"/>
+                        <constraint firstAttribute="width" constant="40" id="Yoz-D4-p5x">
+                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                        </constraint>
+                        <constraint firstItem="gi3-Sd-Ny0" firstAttribute="leading" secondItem="pXI-Rx-CFk" secondAttribute="leading" id="kd8-z6-Q1f"/>
+                        <constraint firstAttribute="bottom" secondItem="gi3-Sd-Ny0" secondAttribute="bottom" id="laC-73-hiI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-6i-aIR">
+                    <rect key="frame" x="64" y="144.66666666666666" width="258" height="38.333333333333343"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unV-dU-rhz" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBw-ew-vle">
+                                    <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="GBw-ew-vle" firstAttribute="leading" secondItem="unV-dU-rhz" secondAttribute="leading" id="AY7-8z-e9L"/>
+                                <constraint firstAttribute="trailing" secondItem="GBw-ew-vle" secondAttribute="trailing" id="VRZ-o6-9rk"/>
+                                <constraint firstItem="GBw-ew-vle" firstAttribute="top" secondItem="unV-dU-rhz" secondAttribute="top" id="W6s-oy-v4j"/>
+                                <constraint firstAttribute="bottom" secondItem="GBw-ew-vle" secondAttribute="bottom" id="c3k-Np-aUP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-s2-2zv" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="53.333333333333329" y="0.0" width="45" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y57-6U-Lbd">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=",">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Y57-6U-Lbd" secondAttribute="trailing" id="0nA-FE-Hpc"/>
+                                <constraint firstItem="Y57-6U-Lbd" firstAttribute="leading" secondItem="Vah-s2-2zv" secondAttribute="leading" id="9ZA-5L-V9u"/>
+                                <constraint firstAttribute="bottom" secondItem="Y57-6U-Lbd" secondAttribute="bottom" id="CpF-Gm-5Ey"/>
+                                <constraint firstItem="Y57-6U-Lbd" firstAttribute="top" secondItem="Vah-s2-2zv" secondAttribute="top" id="WTK-XD-PaK"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zh8-DM-LgR" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="106.33333333333333" y="0.0" width="45.333333333333329" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMO-4D-SKq">
+                                    <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="?">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="HMO-4D-SKq" secondAttribute="bottom" id="5DC-uP-1Jv"/>
+                                <constraint firstItem="HMO-4D-SKq" firstAttribute="leading" secondItem="zh8-DM-LgR" secondAttribute="leading" id="OhV-ea-cIP"/>
+                                <constraint firstAttribute="trailing" secondItem="HMO-4D-SKq" secondAttribute="trailing" id="gW0-ds-Utt"/>
+                                <constraint firstItem="HMO-4D-SKq" firstAttribute="top" secondItem="zh8-DM-LgR" secondAttribute="top" id="o47-97-tpr"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaR-nW-Yb3" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="159.66666666666666" y="0.0" width="45" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVp-9E-LYm">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="!">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordexclamationActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="pJf-Dd-qYC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="nVp-9E-LYm" secondAttribute="bottom" id="Jcc-Yi-Qq6"/>
+                                <constraint firstItem="nVp-9E-LYm" firstAttribute="leading" secondItem="oaR-nW-Yb3" secondAttribute="leading" id="P45-zd-E2G"/>
+                                <constraint firstAttribute="trailing" secondItem="nVp-9E-LYm" secondAttribute="trailing" id="c0h-Cm-qBu"/>
+                                <constraint firstItem="nVp-9E-LYm" firstAttribute="top" secondItem="oaR-nW-Yb3" secondAttribute="top" id="cI3-4v-KVf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOB-oL-i9a" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="212.66666666666669" y="0.0" width="45.333333333333314" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpS-Va-juH">
+                                    <rect key="frame" x="0.0" y="0.0" width="45.333333333333336" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="'">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hpS-Va-juH" firstAttribute="leading" secondItem="UOB-oL-i9a" secondAttribute="leading" id="Voz-rh-Kld"/>
+                                <constraint firstItem="hpS-Va-juH" firstAttribute="top" secondItem="UOB-oL-i9a" secondAttribute="top" id="ev8-ds-bYW"/>
+                                <constraint firstAttribute="trailing" secondItem="hpS-Va-juH" secondAttribute="trailing" id="ikf-hP-Iqr"/>
+                                <constraint firstAttribute="bottom" secondItem="hpS-Va-juH" secondAttribute="bottom" id="ogU-Qf-SmW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwg-Kb-PDC" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="338" y="144.66666666666666" width="40" height="38.333333333333343"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-x3-v3o">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="38.333333333333336"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="delete.left" catalog="system">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteBackwardWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="JtH-IQ-SnQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.85882352939999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="9BN-Iu-hiR">
+                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                        </constraint>
+                        <constraint firstItem="TUp-x3-v3o" firstAttribute="leading" secondItem="qwg-Kb-PDC" secondAttribute="leading" id="ArI-9N-Ita"/>
+                        <constraint firstItem="TUp-x3-v3o" firstAttribute="top" secondItem="qwg-Kb-PDC" secondAttribute="top" id="V4U-PR-gwA"/>
+                        <constraint firstAttribute="bottom" secondItem="TUp-x3-v3o" secondAttribute="bottom" id="V7v-W6-g8U"/>
+                        <constraint firstAttribute="trailing" secondItem="TUp-x3-v3o" secondAttribute="trailing" id="yd7-Vu-JcN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-yw-SfO">
+                    <rect key="frame" x="7" y="40" width="372" height="38.333333333333343"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24F-fb-NN6" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeB-1x-MFL">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="7lp-7f-WwE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NeB-1x-MFL" firstAttribute="leading" secondItem="24F-fb-NN6" secondAttribute="leading" id="DPk-Nw-tqf"/>
+                                <constraint firstAttribute="trailing" secondItem="NeB-1x-MFL" secondAttribute="trailing" id="M5M-8A-lvm"/>
+                                <constraint firstAttribute="bottom" secondItem="NeB-1x-MFL" secondAttribute="bottom" id="cbA-sE-5uN"/>
+                                <constraint firstItem="NeB-1x-MFL" firstAttribute="top" secondItem="24F-fb-NN6" secondAttribute="top" id="t60-4C-MHp"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bi-YR-BAR" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="38" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIy-e4-d9W">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="2">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="9Di-os-RhP"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="wIy-e4-d9W" secondAttribute="bottom" id="QJ9-Gd-iR3"/>
+                                <constraint firstItem="wIy-e4-d9W" firstAttribute="top" secondItem="5bi-YR-BAR" secondAttribute="top" id="bTE-aQ-WWf"/>
+                                <constraint firstItem="wIy-e4-d9W" firstAttribute="leading" secondItem="5bi-YR-BAR" secondAttribute="leading" id="fjx-aR-Byg"/>
+                                <constraint firstAttribute="trailing" secondItem="wIy-e4-d9W" secondAttribute="trailing" id="hLW-Mg-iJm"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-tQ-mAB" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="76" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-jB-Pvf">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="3">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="wY1-vH-Vfa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Tcc-jB-Pvf" firstAttribute="top" secondItem="cGv-tQ-mAB" secondAttribute="top" id="8yE-fX-kWg"/>
+                                <constraint firstAttribute="bottom" secondItem="Tcc-jB-Pvf" secondAttribute="bottom" id="Le8-qM-GI0"/>
+                                <constraint firstAttribute="trailing" secondItem="Tcc-jB-Pvf" secondAttribute="trailing" id="gMi-eC-5wx"/>
+                                <constraint firstItem="Tcc-jB-Pvf" firstAttribute="leading" secondItem="cGv-tQ-mAB" secondAttribute="leading" id="kCb-ec-BjS"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bh-a1-VPn" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="114" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H4-H2-mrr">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="4">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="SFU-Tk-3f5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="4H4-H2-mrr" firstAttribute="leading" secondItem="8bh-a1-VPn" secondAttribute="leading" id="M38-qd-mlZ"/>
+                                <constraint firstAttribute="bottom" secondItem="4H4-H2-mrr" secondAttribute="bottom" id="d3m-rM-Q6b"/>
+                                <constraint firstItem="4H4-H2-mrr" firstAttribute="top" secondItem="8bh-a1-VPn" secondAttribute="top" id="fOE-b5-Tg7"/>
+                                <constraint firstAttribute="trailing" secondItem="4H4-H2-mrr" secondAttribute="trailing" id="tUm-kb-BZP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMc-jH-7Xf" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="152" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbn-hY-u2b">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="5">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="Wd5-LD-a5l"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Gbn-hY-u2b" secondAttribute="trailing" id="72Q-dY-yPE"/>
+                                <constraint firstItem="Gbn-hY-u2b" firstAttribute="top" secondItem="YMc-jH-7Xf" secondAttribute="top" id="aFT-yt-awM"/>
+                                <constraint firstItem="Gbn-hY-u2b" firstAttribute="leading" secondItem="YMc-jH-7Xf" secondAttribute="leading" id="r8b-vh-vcp"/>
+                                <constraint firstAttribute="bottom" secondItem="Gbn-hY-u2b" secondAttribute="bottom" id="rbt-qS-UTD"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5A-W1-ChP" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="190" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCQ-zW-0gD">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="6">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="KeX-Xx-huO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="NCQ-zW-0gD" secondAttribute="bottom" id="QGV-pY-p9S"/>
+                                <constraint firstAttribute="trailing" secondItem="NCQ-zW-0gD" secondAttribute="trailing" id="RXi-am-wYV"/>
+                                <constraint firstItem="NCQ-zW-0gD" firstAttribute="leading" secondItem="U5A-W1-ChP" secondAttribute="leading" id="rXs-2a-sBn"/>
+                                <constraint firstItem="NCQ-zW-0gD" firstAttribute="top" secondItem="U5A-W1-ChP" secondAttribute="top" id="sTU-pB-HdS"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwo-h5-7BA" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="228" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbm-n3-GgE">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="7">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="Uyf-tj-mhA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Rbm-n3-GgE" firstAttribute="top" secondItem="Wwo-h5-7BA" secondAttribute="top" id="CFu-nr-vDJ"/>
+                                <constraint firstAttribute="bottom" secondItem="Rbm-n3-GgE" secondAttribute="bottom" id="GQC-Jn-s6Y"/>
+                                <constraint firstItem="Rbm-n3-GgE" firstAttribute="leading" secondItem="Wwo-h5-7BA" secondAttribute="leading" id="Msg-c8-J1c"/>
+                                <constraint firstAttribute="trailing" secondItem="Rbm-n3-GgE" secondAttribute="trailing" id="RJ2-qh-O1C"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-Ll-9nV" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="266" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-bS-Xa5">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="8">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="z92-8U-q2V"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="P8o-bS-Xa5" secondAttribute="bottom" id="0tM-Ke-kh2"/>
+                                <constraint firstItem="P8o-bS-Xa5" firstAttribute="leading" secondItem="pMX-Ll-9nV" secondAttribute="leading" id="D2q-4w-PTZ"/>
+                                <constraint firstAttribute="trailing" secondItem="P8o-bS-Xa5" secondAttribute="trailing" id="FTY-TT-5rY"/>
+                                <constraint firstItem="P8o-bS-Xa5" firstAttribute="top" secondItem="pMX-Ll-9nV" secondAttribute="top" id="YWx-s3-8Ka"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EH5-0r-HkY" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="304" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6H-dY-Z7e">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="9">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="TRC-wM-d7g"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="s6H-dY-Z7e" secondAttribute="bottom" id="3cd-th-Kiz"/>
+                                <constraint firstItem="s6H-dY-Z7e" firstAttribute="top" secondItem="EH5-0r-HkY" secondAttribute="top" id="G9K-3n-AdU"/>
+                                <constraint firstItem="s6H-dY-Z7e" firstAttribute="leading" secondItem="EH5-0r-HkY" secondAttribute="leading" id="K29-1N-jU1"/>
+                                <constraint firstAttribute="trailing" secondItem="s6H-dY-Z7e" secondAttribute="trailing" id="pIk-rE-AWW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoR-Vg-mSb" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="342" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUA-gb-X3R">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="0">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="Yoq-h7-YUe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rUA-gb-X3R" firstAttribute="leading" secondItem="hoR-Vg-mSb" secondAttribute="leading" id="DVD-dO-y8M"/>
+                                <constraint firstItem="rUA-gb-X3R" firstAttribute="top" secondItem="hoR-Vg-mSb" secondAttribute="top" id="Y3B-Js-RCn"/>
+                                <constraint firstAttribute="bottom" secondItem="rUA-gb-X3R" secondAttribute="bottom" id="Yfy-ct-cnf"/>
+                                <constraint firstAttribute="trailing" secondItem="rUA-gb-X3R" secondAttribute="trailing" id="zD1-oz-kDC"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="26C-Do-nWn">
+                    <rect key="frame" x="6" y="91.333333333333329" width="372" height="38.333333333333329"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rz-eF-ekO" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru9-PT-07t">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="-">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="N2P-yJ-jir"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Ru9-PT-07t" secondAttribute="bottom" id="4iv-qs-nTs"/>
+                                <constraint firstItem="Ru9-PT-07t" firstAttribute="leading" secondItem="1rz-eF-ekO" secondAttribute="leading" id="VHZ-f4-8zV"/>
+                                <constraint firstItem="Ru9-PT-07t" firstAttribute="top" secondItem="1rz-eF-ekO" secondAttribute="top" id="VYk-Jd-kJP"/>
+                                <constraint firstAttribute="trailing" secondItem="Ru9-PT-07t" secondAttribute="trailing" id="hvE-jP-A62"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydr-mR-h0c" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="38" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZH-w3-qkX">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="/">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="Dpy-Mp-8hO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="9ZH-w3-qkX" firstAttribute="leading" secondItem="ydr-mR-h0c" secondAttribute="leading" id="3iH-ll-oBp"/>
+                                <constraint firstAttribute="bottom" secondItem="9ZH-w3-qkX" secondAttribute="bottom" id="Iwp-ZM-zvU"/>
+                                <constraint firstAttribute="trailing" secondItem="9ZH-w3-qkX" secondAttribute="trailing" id="MHX-No-Ebk"/>
+                                <constraint firstItem="9ZH-w3-qkX" firstAttribute="top" secondItem="ydr-mR-h0c" secondAttribute="top" id="ZCD-FX-QuV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jc9-xq-Ry0" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="76" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-Lq-xfs">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=":">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="H7D-nw-4Lk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="6B7-Lq-xfs" secondAttribute="bottom" id="ABl-hR-zlI"/>
+                                <constraint firstItem="6B7-Lq-xfs" firstAttribute="leading" secondItem="jc9-xq-Ry0" secondAttribute="leading" id="kEU-di-Gut"/>
+                                <constraint firstAttribute="trailing" secondItem="6B7-Lq-xfs" secondAttribute="trailing" id="nxb-vb-b9I"/>
+                                <constraint firstItem="6B7-Lq-xfs" firstAttribute="top" secondItem="jc9-xq-Ry0" secondAttribute="top" id="oOO-Ya-LbP"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTm-xP-8MJ" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="114" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RS-PA-7j8">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=";">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="OZ3-Uv-MOC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="0RS-PA-7j8" firstAttribute="leading" secondItem="vTm-xP-8MJ" secondAttribute="leading" id="7Qz-4n-Arn"/>
+                                <constraint firstAttribute="bottom" secondItem="0RS-PA-7j8" secondAttribute="bottom" id="9X2-ai-bJc"/>
+                                <constraint firstAttribute="trailing" secondItem="0RS-PA-7j8" secondAttribute="trailing" id="NI1-h3-YSs"/>
+                                <constraint firstItem="0RS-PA-7j8" firstAttribute="top" secondItem="vTm-xP-8MJ" secondAttribute="top" id="XDf-8a-dFs"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I42-WO-3ZC" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="152" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60g-FR-IWs">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="(">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="WAF-OH-apg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="60g-FR-IWs" firstAttribute="leading" secondItem="I42-WO-3ZC" secondAttribute="leading" id="H8e-Zf-nQM"/>
+                                <constraint firstAttribute="trailing" secondItem="60g-FR-IWs" secondAttribute="trailing" id="f62-fB-s6p"/>
+                                <constraint firstItem="60g-FR-IWs" firstAttribute="top" secondItem="I42-WO-3ZC" secondAttribute="top" id="umx-Im-UrV"/>
+                                <constraint firstAttribute="bottom" secondItem="60g-FR-IWs" secondAttribute="bottom" id="wj4-zR-lXV"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9V-hg-CaG" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="190" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wM-Tp-46O">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=")">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="APK-2W-HnZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2wM-Tp-46O" secondAttribute="trailing" id="Lkh-gs-CmG"/>
+                                <constraint firstItem="2wM-Tp-46O" firstAttribute="top" secondItem="T9V-hg-CaG" secondAttribute="top" id="Nog-1s-BTX"/>
+                                <constraint firstItem="2wM-Tp-46O" firstAttribute="leading" secondItem="T9V-hg-CaG" secondAttribute="leading" id="Urs-PC-dNM"/>
+                                <constraint firstAttribute="bottom" secondItem="2wM-Tp-46O" secondAttribute="bottom" id="fqI-qm-7ML"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhs-4O-tEE" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="228" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osj-XJ-ZsC">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="₹">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="suQ-8j-WDi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Osj-XJ-ZsC" secondAttribute="trailing" id="BWR-de-Kt2"/>
+                                <constraint firstAttribute="bottom" secondItem="Osj-XJ-ZsC" secondAttribute="bottom" id="F5M-Z9-Qh8"/>
+                                <constraint firstItem="Osj-XJ-ZsC" firstAttribute="leading" secondItem="Jhs-4O-tEE" secondAttribute="leading" id="Kcy-2L-1Sh"/>
+                                <constraint firstItem="Osj-XJ-ZsC" firstAttribute="top" secondItem="Jhs-4O-tEE" secondAttribute="top" id="Scx-PW-lC0"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6u6-DL-Hjt" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="266" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PV2-Aa-byj">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="&amp;">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="ugv-XV-lwV"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="PV2-Aa-byj" firstAttribute="leading" secondItem="6u6-DL-Hjt" secondAttribute="leading" id="6Z6-GG-dJz"/>
+                                <constraint firstItem="PV2-Aa-byj" firstAttribute="top" secondItem="6u6-DL-Hjt" secondAttribute="top" id="Vbl-v2-GEG"/>
+                                <constraint firstAttribute="trailing" secondItem="PV2-Aa-byj" secondAttribute="trailing" id="a6R-OD-hSR"/>
+                                <constraint firstAttribute="bottom" secondItem="PV2-Aa-byj" secondAttribute="bottom" id="pga-9a-QqW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1W-CX-rb6" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="304" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z07-YT-tJf">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="@">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="WUv-c9-Gj1"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Z07-YT-tJf" firstAttribute="top" secondItem="D1W-CX-rb6" secondAttribute="top" id="CDl-rY-4DY"/>
+                                <constraint firstAttribute="bottom" secondItem="Z07-YT-tJf" secondAttribute="bottom" id="JOV-HX-OeH"/>
+                                <constraint firstItem="Z07-YT-tJf" firstAttribute="leading" secondItem="D1W-CX-rb6" secondAttribute="leading" id="jGJ-7c-9Ax"/>
+                                <constraint firstAttribute="trailing" secondItem="Z07-YT-tJf" secondAttribute="trailing" id="xgw-Tr-YQK"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dww-XD-URo" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
+                            <rect key="frame" x="342" y="0.0" width="30" height="38.333333333333336"/>
+                            <subviews>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmb-fW-95X">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="&quot;">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="wordClickActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="V1U-wR-0AR"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Bmb-fW-95X" firstAttribute="top" secondItem="Dww-XD-URo" secondAttribute="top" id="1Sj-nh-o7v"/>
+                                <constraint firstItem="Bmb-fW-95X" firstAttribute="leading" secondItem="Dww-XD-URo" secondAttribute="leading" id="WQ0-Dh-bln"/>
+                                <constraint firstAttribute="bottom" secondItem="Bmb-fW-95X" secondAttribute="bottom" id="c12-Co-lcc"/>
+                                <constraint firstAttribute="trailing" secondItem="Bmb-fW-95X" secondAttribute="trailing" id="gvH-bR-1oD"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowOpacity">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="ShadowRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="maskToBounds">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-MP-8YB">
+                    <rect key="frame" x="318" y="4" width="60" height="30"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downblack" translatesAutoresizingMaskIntoConstraints="NO" id="R3B-ec-XX6">
+                            <rect key="frame" x="25" y="0.0" width="35" height="30"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPe-Y7-t52">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <color key="titleColor" systemColor="tintColor"/>
+                            </state>
+                            <connections>
+                                <action selector="closeActionWithSender:" destination="HWJ-Fv-OMK" eventType="touchUpInside" id="blb-hZ-Yrc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="R3B-ec-XX6" firstAttribute="leading" secondItem="YTy-MP-8YB" secondAttribute="leading" constant="25" id="0y2-Cw-mWY"/>
+                        <constraint firstAttribute="trailing" secondItem="hPe-Y7-t52" secondAttribute="trailing" id="1os-Fr-jfx"/>
+                        <constraint firstAttribute="bottom" secondItem="R3B-ec-XX6" secondAttribute="bottom" id="3lE-An-fLg"/>
+                        <constraint firstItem="hPe-Y7-t52" firstAttribute="leading" secondItem="YTy-MP-8YB" secondAttribute="leading" id="4MC-Ix-qqr"/>
+                        <constraint firstAttribute="bottom" secondItem="hPe-Y7-t52" secondAttribute="bottom" id="530-lY-2kb"/>
+                        <constraint firstAttribute="height" constant="30" id="8lS-Ec-SDB"/>
+                        <constraint firstItem="hPe-Y7-t52" firstAttribute="top" secondItem="YTy-MP-8YB" secondAttribute="top" id="93t-c8-eL3"/>
+                        <constraint firstAttribute="width" constant="60" id="S75-sW-M8i"/>
+                        <constraint firstItem="R3B-ec-XX6" firstAttribute="top" secondItem="YTy-MP-8YB" secondAttribute="top" id="baT-sk-a4P"/>
+                        <constraint firstAttribute="trailing" secondItem="R3B-ec-XX6" secondAttribute="trailing" id="cy8-bR-SFa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rSH-Ot-bwO"/>
+            <color key="backgroundColor" name="englishgray"/>
+            <constraints>
+                <constraint firstItem="pXI-Rx-CFk" firstAttribute="top" secondItem="26C-Do-nWn" secondAttribute="bottom" constant="15" id="3gq-GG-Ie1"/>
+                <constraint firstItem="qwg-Kb-PDC" firstAttribute="height" secondItem="Xdp-6i-aIR" secondAttribute="height" id="5Gt-dc-ZnM"/>
+                <constraint firstItem="3GP-yw-SfO" firstAttribute="top" secondItem="HWJ-Fv-OMK" secondAttribute="top" constant="40" id="8Yi-3y-zbL"/>
+                <constraint firstItem="26C-Do-nWn" firstAttribute="height" secondItem="3GP-yw-SfO" secondAttribute="height" id="9EC-hi-xF1"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="top" secondItem="pXI-Rx-CFk" secondAttribute="bottom" constant="14" id="AjY-p4-u2X"/>
+                <constraint firstItem="3GP-yw-SfO" firstAttribute="top" secondItem="YTy-MP-8YB" secondAttribute="bottom" constant="6" id="C2V-p9-evw"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="leading" secondItem="rSH-Ot-bwO" secondAttribute="leading" id="Czl-P5-iVv"/>
+                <constraint firstItem="26C-Do-nWn" firstAttribute="leading" secondItem="rSH-Ot-bwO" secondAttribute="leading" constant="6" id="HzG-VH-tQR"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="trailing" secondItem="rSH-Ot-bwO" secondAttribute="trailing" id="Kxv-kE-J7a"/>
+                <constraint firstItem="pXI-Rx-CFk" firstAttribute="leading" secondItem="rSH-Ot-bwO" secondAttribute="leading" constant="8" id="LRT-dw-05h"/>
+                <constraint firstItem="pXI-Rx-CFk" firstAttribute="height" secondItem="Xdp-6i-aIR" secondAttribute="height" id="Nm8-JI-Smn"/>
+                <constraint firstItem="rSH-Ot-bwO" firstAttribute="trailing" secondItem="3GP-yw-SfO" secondAttribute="trailing" constant="7" id="NqZ-6n-GFK"/>
+                <constraint firstItem="Xdp-6i-aIR" firstAttribute="leading" secondItem="pXI-Rx-CFk" secondAttribute="trailing" constant="16" id="UD1-Ge-eA2"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="top" secondItem="Xdp-6i-aIR" secondAttribute="bottom" constant="14" id="VDq-W7-XjG"/>
+                <constraint firstItem="3GP-yw-SfO" firstAttribute="leading" secondItem="rSH-Ot-bwO" secondAttribute="leading" constant="7" id="ceU-dH-Onz"/>
+                <constraint firstItem="Xdp-6i-aIR" firstAttribute="height" secondItem="26C-Do-nWn" secondAttribute="height" id="doZ-sg-mMO"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="bottom" secondItem="rSH-Ot-bwO" secondAttribute="bottom" id="kog-EO-Hha"/>
+                <constraint firstItem="bCW-nQ-Cal" firstAttribute="top" secondItem="qwg-Kb-PDC" secondAttribute="bottom" constant="14" id="lst-SY-JeS"/>
+                <constraint firstAttribute="trailing" secondItem="YTy-MP-8YB" secondAttribute="trailing" constant="8" id="nQs-Ff-KbE"/>
+                <constraint firstItem="rSH-Ot-bwO" firstAttribute="trailing" secondItem="qwg-Kb-PDC" secondAttribute="trailing" constant="8" id="njf-Kg-xWZ"/>
+                <constraint firstItem="26C-Do-nWn" firstAttribute="top" secondItem="3GP-yw-SfO" secondAttribute="bottom" constant="13" id="sEy-CW-7cj"/>
+                <constraint firstItem="qwg-Kb-PDC" firstAttribute="leading" secondItem="Xdp-6i-aIR" secondAttribute="trailing" constant="16" id="sg5-Jn-37L"/>
+                <constraint firstItem="rSH-Ot-bwO" firstAttribute="trailing" secondItem="26C-Do-nWn" secondAttribute="trailing" constant="8" id="wds-Ic-thG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteBtn" destination="TUp-x3-v3o" id="6P4-jY-FgV"/>
+                <outlet property="doneBtn" destination="hPe-Y7-t52" id="Axf-va-ulZ"/>
+                <outlet property="specialChars" destination="gi3-Sd-Ny0" id="wNj-hQ-Vqg"/>
+                <outlet property="worldBtn" destination="mbc-ws-fOV" id="i8k-0p-KvH"/>
+                <outletCollection property="specialCharButtons" destination="Ru9-PT-07t" collectionClass="NSMutableArray" id="i2h-r7-Lmp"/>
+                <outletCollection property="specialCharButtons" destination="9ZH-w3-qkX" collectionClass="NSMutableArray" id="U6f-dM-AXS"/>
+                <outletCollection property="specialCharButtons" destination="6B7-Lq-xfs" collectionClass="NSMutableArray" id="b8Z-us-P65"/>
+                <outletCollection property="specialCharButtons" destination="0RS-PA-7j8" collectionClass="NSMutableArray" id="Vbs-nI-EIj"/>
+                <outletCollection property="specialCharButtons" destination="60g-FR-IWs" collectionClass="NSMutableArray" id="s3y-5W-Lsp"/>
+                <outletCollection property="specialCharButtons" destination="2wM-Tp-46O" collectionClass="NSMutableArray" id="XUu-9O-fjz"/>
+                <outletCollection property="specialCharButtons" destination="Osj-XJ-ZsC" collectionClass="NSMutableArray" id="j3B-7S-knu"/>
+                <outletCollection property="specialCharButtons" destination="PV2-Aa-byj" collectionClass="NSMutableArray" id="TGW-oS-rZl"/>
+                <outletCollection property="specialCharButtons" destination="Z07-YT-tJf" collectionClass="NSMutableArray" id="JAq-r4-04O"/>
+                <outletCollection property="specialCharButtons" destination="Bmb-fW-95X" collectionClass="NSMutableArray" id="nqF-p3-sUR"/>
+                <outletCollection property="specialCharButtons" destination="NeB-1x-MFL" collectionClass="NSMutableArray" id="rPa-EP-cCX"/>
+                <outletCollection property="specialCharButtons" destination="wIy-e4-d9W" collectionClass="NSMutableArray" id="CCc-np-mYX"/>
+                <outletCollection property="specialCharButtons" destination="Tcc-jB-Pvf" collectionClass="NSMutableArray" id="B9v-qZ-EUW"/>
+                <outletCollection property="specialCharButtons" destination="4H4-H2-mrr" collectionClass="NSMutableArray" id="1kP-9i-NXQ"/>
+                <outletCollection property="specialCharButtons" destination="Gbn-hY-u2b" collectionClass="NSMutableArray" id="Q86-jO-a0u"/>
+                <outletCollection property="specialCharButtons" destination="NCQ-zW-0gD" collectionClass="NSMutableArray" id="grJ-Fi-6m6"/>
+                <outletCollection property="specialCharButtons" destination="Rbm-n3-GgE" collectionClass="NSMutableArray" id="ffA-eG-OfB"/>
+                <outletCollection property="specialCharButtons" destination="P8o-bS-Xa5" collectionClass="NSMutableArray" id="U1a-Zd-I80"/>
+                <outletCollection property="specialCharButtons" destination="s6H-dY-Z7e" collectionClass="NSMutableArray" id="0PF-S1-v8j"/>
+                <outletCollection property="specialCharButtons" destination="rUA-gb-X3R" collectionClass="NSMutableArray" id="wmS-g6-5uu"/>
+            </connections>
+            <point key="canvasLocation" x="16.744186046511629" y="18.025751072961373"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="102"/>
+        <image name="downblack" width="42.666667938232422" height="42.666667938232422"/>
+        <namedColor name="englishgray">
+            <color red="0.7803921568627451" green="0.792156862745098" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

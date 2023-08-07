@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0059FD2A797F2B00A89985 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0059FC2A797F2B00A89985 /* UIView+Extension.swift */; };
+		FC1FFE612A78373600DE24AC /* UITextInput+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1FFE602A78373600DE24AC /* UITextInput+Extension.swift */; };
+		FC3F3EC22A70236B0032552D /* CustomKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F3EC12A70236B0032552D /* CustomKeyboardManager.swift */; };
+		FC6C726F2A21E36400949282 /* CommonFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6C726E2A21E36400949282 /* CommonFile.swift */; };
+		FC81B6852A500B7F0001BE20 /* SpecialCharactersKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC81B6842A500B7F0001BE20 /* SpecialCharactersKeyboard.xib */; };
+		FCC529962A2E5CDC00E151E8 /* IllaguKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC529952A2E5CDC00E151E8 /* IllaguKeyboardView.swift */; };
+		FCC529982A2E5CE800E151E8 /* IllaguKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC529972A2E5CE800E151E8 /* IllaguKeyboardView.xib */; };
 		FCC5B8F52A2125D2006623C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */; };
 		FCC5B8F72A2125D2006623C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */; };
 		FCC5B8F92A2125D2006623C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B8F82A2125D2006623C7 /* ViewController.swift */; };
@@ -17,6 +24,12 @@
 		FCC5B90F2A2125D4006623C7 /* CustomTamilKeyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B90E2A2125D4006623C7 /* CustomTamilKeyboardTests.swift */; };
 		FCC5B9192A2125D4006623C7 /* CustomTamilKeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B9182A2125D4006623C7 /* CustomTamilKeyboardUITests.swift */; };
 		FCC5B91B2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B91A2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift */; };
+		FCC5B9282A212625006623C7 /* BaseTamilKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC5B9272A212625006623C7 /* BaseTamilKeyboardView.swift */; };
+		FCC5B92A2A21268B006623C7 /* BaseTamilView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC5B9292A21268B006623C7 /* BaseTamilView.xib */; };
+		FCD6FD752A40D43F00C69710 /* EnglishKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD6FD742A40D43F00C69710 /* EnglishKeyboard.xib */; };
+		FCDDB5E72A671FF1002873A1 /* EnglishKeyboard~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDDB5E62A671FF1002873A1 /* EnglishKeyboard~ipad.xib */; };
+		FCF57B1F2A69AAFB006ED746 /* SpecialCharactersKeyboard~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF57B1E2A69AAFB006ED746 /* SpecialCharactersKeyboard~ipad.xib */; };
+		FCF5D0642A6427390018B54C /* BaseTamilView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF5D0632A6427390018B54C /* BaseTamilView~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0059FC2A797F2B00A89985 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FC1FFE602A78373600DE24AC /* UITextInput+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextInput+Extension.swift"; sourceTree = "<group>"; };
+		FC3F3EC12A70236B0032552D /* CustomKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardManager.swift; sourceTree = "<group>"; };
+		FC6C726E2A21E36400949282 /* CommonFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFile.swift; sourceTree = "<group>"; };
+		FC81B6842A500B7F0001BE20 /* SpecialCharactersKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialCharactersKeyboard.xib; sourceTree = "<group>"; };
+		FCC529952A2E5CDC00E151E8 /* IllaguKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllaguKeyboardView.swift; sourceTree = "<group>"; };
+		FCC529972A2E5CE800E151E8 /* IllaguKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IllaguKeyboardView.xib; sourceTree = "<group>"; };
 		FCC5B8F12A2125D2006623C7 /* CustomTamilKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTamilKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +71,12 @@
 		FCC5B9142A2125D4006623C7 /* CustomTamilKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTamilKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC5B9182A2125D4006623C7 /* CustomTamilKeyboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTamilKeyboardUITests.swift; sourceTree = "<group>"; };
 		FCC5B91A2A2125D4006623C7 /* CustomTamilKeyboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTamilKeyboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCC5B9272A212625006623C7 /* BaseTamilKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTamilKeyboardView.swift; sourceTree = "<group>"; };
+		FCC5B9292A21268B006623C7 /* BaseTamilView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTamilView.xib; sourceTree = "<group>"; };
+		FCD6FD742A40D43F00C69710 /* EnglishKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnglishKeyboard.xib; sourceTree = "<group>"; };
+		FCDDB5E62A671FF1002873A1 /* EnglishKeyboard~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "EnglishKeyboard~ipad.xib"; sourceTree = "<group>"; };
+		FCF57B1E2A69AAFB006ED746 /* SpecialCharactersKeyboard~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SpecialCharactersKeyboard~ipad.xib"; sourceTree = "<group>"; };
+		FCF5D0632A6427390018B54C /* BaseTamilView~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "BaseTamilView~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +130,19 @@
 				FCC5B8F42A2125D2006623C7 /* AppDelegate.swift */,
 				FCC5B8F62A2125D2006623C7 /* SceneDelegate.swift */,
 				FCC5B8F82A2125D2006623C7 /* ViewController.swift */,
+				FC1FFE602A78373600DE24AC /* UITextInput+Extension.swift */,
+				FC0059FC2A797F2B00A89985 /* UIView+Extension.swift */,
+				FC3F3EC12A70236B0032552D /* CustomKeyboardManager.swift */,
+				FCC529952A2E5CDC00E151E8 /* IllaguKeyboardView.swift */,
+				FCC529972A2E5CE800E151E8 /* IllaguKeyboardView.xib */,
+				FCC5B9272A212625006623C7 /* BaseTamilKeyboardView.swift */,
+				FC6C726E2A21E36400949282 /* CommonFile.swift */,
+				FC81B6842A500B7F0001BE20 /* SpecialCharactersKeyboard.xib */,
+				FCF57B1E2A69AAFB006ED746 /* SpecialCharactersKeyboard~ipad.xib */,
+				FCD6FD742A40D43F00C69710 /* EnglishKeyboard.xib */,
+				FCDDB5E62A671FF1002873A1 /* EnglishKeyboard~ipad.xib */,
+				FCC5B9292A21268B006623C7 /* BaseTamilView.xib */,
+				FCF5D0632A6427390018B54C /* BaseTamilView~ipad.xib */,
 				FCC5B8FA2A2125D2006623C7 /* Main.storyboard */,
 				FCC5B9002A2125D4006623C7 /* Assets.xcassets */,
 				FCC5B9022A2125D4006623C7 /* LaunchScreen.storyboard */,
@@ -234,9 +273,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCF5D0642A6427390018B54C /* BaseTamilView~ipad.xib in Resources */,
+				FCC529982A2E5CE800E151E8 /* IllaguKeyboardView.xib in Resources */,
 				FCC5B9042A2125D4006623C7 /* LaunchScreen.storyboard in Resources */,
+				FC81B6852A500B7F0001BE20 /* SpecialCharactersKeyboard.xib in Resources */,
 				FCC5B9012A2125D4006623C7 /* Assets.xcassets in Resources */,
+				FCF57B1F2A69AAFB006ED746 /* SpecialCharactersKeyboard~ipad.xib in Resources */,
+				FCD6FD752A40D43F00C69710 /* EnglishKeyboard.xib in Resources */,
 				FCC5B8FC2A2125D2006623C7 /* Main.storyboard in Resources */,
+				FCDDB5E72A671FF1002873A1 /* EnglishKeyboard~ipad.xib in Resources */,
+				FCC5B92A2A21268B006623C7 /* BaseTamilView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +308,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCC5B8F92A2125D2006623C7 /* ViewController.swift in Sources */,
+				FCC529962A2E5CDC00E151E8 /* IllaguKeyboardView.swift in Sources */,
+				FCC5B9282A212625006623C7 /* BaseTamilKeyboardView.swift in Sources */,
+				FC6C726F2A21E36400949282 /* CommonFile.swift in Sources */,
 				FCC5B8F52A2125D2006623C7 /* AppDelegate.swift in Sources */,
+				FC1FFE612A78373600DE24AC /* UITextInput+Extension.swift in Sources */,
+				FC3F3EC22A70236B0032552D /* CustomKeyboardManager.swift in Sources */,
 				FCC5B8FF2A2125D2006623C7 /* CustomTamilKeyboard.xcdatamodeld in Sources */,
+				FC0059FD2A797F2B00A89985 /* UIView+Extension.swift in Sources */,
 				FCC5B8F72A2125D2006623C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +501,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +530,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
