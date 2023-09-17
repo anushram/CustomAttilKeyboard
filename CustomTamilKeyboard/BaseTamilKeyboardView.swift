@@ -49,7 +49,11 @@ class EnglishKeyboard: UIView {
     
     @IBAction func wordClickAction(sender: UIButton){
         let letter = englishsmallLetters[sender.tag]
-        keyboardDelegate?.didEnteredText(text: (isCapitalTag ? capitalEnglishUnicode[letter] : smallEnglishUnicode[letter]) ?? "")
+        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+            sender.superview?.transform = .identity
+            self.keyboardDelegate?.didEnteredText(text: (self.isCapitalTag ? capitalEnglishUnicode[letter] : smallEnglishUnicode[letter]) ?? "")
+        }, completion: nil)
     }
     
     @IBAction func deleteBackward(sender: UIButton){
@@ -113,7 +117,15 @@ class BaseTamilView: UIView{
         }
     }
     
-    @IBOutlet var uzirEzhuthuButtons: [UIButton]!
+    @IBOutlet var uzirEzhuthuButtons: [UIButton]! {
+        didSet {
+            uzirEzhuthuButtons.forEach { button in
+                button.titleLabel?.numberOfLines = 1;
+                button.titleLabel?.adjustsFontSizeToFitWidth = true
+                button.titleLabel?.lineBreakMode = .byClipping
+            }
+        }
+    }
     @IBOutlet var meiEzhuthuButtons: [UIButton]!
     
     var isUirEzhuthuChanged = false
@@ -128,13 +140,21 @@ class BaseTamilView: UIView{
     }
     
     @IBAction func didTabMeiEzhuthu(sender: UIButton){
-        keyboardDelegate?.didEnteredText(text: meiEzhuthu[sender.tag])
-        isUirEzhuthuChanged = true
-        reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged, meiEzhuthu: meiEzhuthu[sender.tag])
+        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+            sender.superview?.transform = .identity
+            self.keyboardDelegate?.didEnteredText(text: meiEzhuthu[sender.tag])
+            self.isUirEzhuthuChanged = true
+            self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged, meiEzhuthu: meiEzhuthu[sender.tag])
+        }, completion: nil)
     }
     
     @IBAction func didTabUirEzhuthu(sender: UIButton){
-        changeUirEzhuthu(index: sender.tag, isUirEzhuthu: self.isUirEzhuthuChanged)
+        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+            sender.superview?.transform = .identity
+                self.changeUirEzhuthu(index: sender.tag, isUirEzhuthu: self.isUirEzhuthuChanged)
+        }, completion: nil)
     }
     
     private func reloadUirEzhuthu(isUirEzhuthu: Bool, meiEzhuthu: String = "") {
@@ -223,7 +243,11 @@ class BaseTamilView: UIView{
     
     @IBAction func changeUyirEzhuthu(sender: UIButton){
         self.isUirEzhuthuChanged = false
-        reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
+        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+            sender.superview?.transform = .identity
+                self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
+        }, completion: nil)
     }
     
     @IBAction func changeSpecialKeyboard(sender: UIButton){
@@ -307,7 +331,11 @@ class SpecialCharactersKeyboard: UIView{
     @IBAction func wordClickAction(sender: UIButton){
         let title = isAdditionalChars ? passwordSpecialChars[sender.tag] : additionalSpecialChars[sender.tag]
         let letter = isAdditionalChars ? passwordSpecialUnicodeChars[title]  : additionalSpecialUnicodeChars[title]
-        keyboardDelegate?.didEnteredText(text: letter!)
+        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+            sender.superview?.transform = .identity
+            self.keyboardDelegate?.didEnteredText(text: letter!)
+        }, completion: nil)
     }
     
     @IBAction func wordexclamationAction(sender: UIButton){
