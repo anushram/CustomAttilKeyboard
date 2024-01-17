@@ -140,7 +140,7 @@ open class IllaguKeyboardView: UIView, iLLAGUKeyboardDelegate {
         customInputView.inputTextField = self.inputTextField
         customInputView.inputTextView = self.inputTextView
         customInputView.keyboardDelegate = self
-        self.frame.size.height = (customInputView.frame.size.height + 20)
+        self.frame.size.height = (customInputView.frame.size.height + 60)
         tamilView = customInputView
         contentView.addSubview(customInputView)
         customInputView.translatesAutoresizingMaskIntoConstraints = false
@@ -152,7 +152,7 @@ open class IllaguKeyboardView: UIView, iLLAGUKeyboardDelegate {
     private func setupEnglishKeyboardTextView(_ contentView: UIView) {
         let customInputView = EnglishKeyboard.instanceFromNib()
         customInputView.keyboardDelegate = self
-        self.frame.size.height = customInputView.frame.size.height
+        self.frame.size.height = (customInputView.frame.size.height + 60)
         contentView.addSubview(customInputView)
         customInputView.translatesAutoresizingMaskIntoConstraints = false
         customInputView.fixConstraintsInView(contentView)
@@ -163,7 +163,8 @@ open class IllaguKeyboardView: UIView, iLLAGUKeyboardDelegate {
         let customInputView = SpecialCharactersKeyboard.instanceFromNib()
         customInputView.keyboardDelegate = self
         customInputView.selectedLanguage = from
-        self.frame.size.height = customInputView.frame.size.height
+        self.frame.size.height = (customInputView.frame.size.height + 60)
+        //self.frame.size.height = customInputView.frame.size.height
         contentView.addSubview(customInputView)
         customInputView.translatesAutoresizingMaskIntoConstraints = false
         customInputView.fixConstraintsInView(contentView)

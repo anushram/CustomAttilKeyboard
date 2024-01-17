@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F9BF9322-6A4B-4842-AB09-4821CE7CF862"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2055FC04-F44A-4F64-9000-260636A3AFE3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "deleteTextBackWord()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "BaseTamilView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 54c0654b9bb2ca77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.worldBtn.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 71bcfcd31d28ba43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.worldBtn.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 338dd2862198ae74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.worldBtn.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 23ed77095daec43f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.worldBtn.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 13b056c4e1151fcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.init(frame: __C.CGRect) -&gt; CustomTamilKeyboard.BaseTamilView"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "DC4A6F2F-EA59-4EFB-81B1-39FE2389DB52 - 6868e72b95450dc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.BaseTamilView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CustomTamilKeyboard.BaseTamilView&gt;"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "291">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D51F0E5C-FDE1-4B4A-BBF6-C6356F630BEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
+            landmarkName = "changeUirEzhuthu(index:isUirEzhuthu:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D51F0E5C-FDE1-4B4A-BBF6-C6356F630BEA - d2f16433d7604248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Int, __C.UIButton) -&gt; __C.UIButton in CustomTamilKeyboard.BaseTamilView.reloadMeiEzhuthu() -&gt; ()"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "D51F0E5C-FDE1-4B4A-BBF6-C6356F630BEA - 4d38d28f47af261"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Int, __C.UIButton) -&gt; __C.UIButton in CustomTamilKeyboard.BaseTamilView.reloadMeiEzhuthu() -&gt; ()"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "322"
+                  endingLineNumber = "322"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16AB7813-11AD-4CDF-B72A-AD2BC048D298"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6FB9CA9-EA6D-43D9-8813-88561B2038EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "didEnteredText(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "391C74E7-F696-4020-8E44-57189B0C7F33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "didEnteredText(text:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "576C191F-00B9-4236-9432-08220FC2FD13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C50C842-9D48-4914-99A5-376C2B4A6F0C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3FFB0B9-7144-498C-9D40-F58C14B25FE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "606A0A6A-2345-4593-924F-CC7A92E14BFD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32485643-4A46-44F2-B3C7-8199CC144CE7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB594F7F-BF48-4347-9082-24BDDEA54D8C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8DFBC09-6141-439D-8D6D-2269EC2AE351"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E8E8E70-BEF2-4AF0-867A-3D1A4884E3CD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF6CBF02-AD83-40B0-B57E-DE8423DF74A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/IllaguKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "doneAction()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C034DC8B-D218-4E25-8708-550B051EA14A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A5CEA2F3-B25A-4B4C-8D92-57813386E904"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B31A49A9-8B22-4FBD-B67E-CA1A397C499C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "429"
+            endingLineNumber = "429"
+            landmarkName = "changeUyirEzhuthu(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B38DF8B8-17C5-4462-A5DC-4DB9F6FC0627"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B38DF8B8-17C5-4462-A5DC-4DB9F6FC0627 - 251239c986df6b5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.CustomButton.init(frame: __C.CGRect) -&gt; CustomTamilKeyboard.CustomButton"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "348">
+               </Location>
+               <Location
+                  uuid = "B38DF8B8-17C5-4462-A5DC-4DB9F6FC0627 - 251239c986df6b5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.CustomButton.init(frame: __C.CGRect) -&gt; CustomTamilKeyboard.CustomButton"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "B38DF8B8-17C5-4462-A5DC-4DB9F6FC0627 - 251239c986df6b5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomTamilKeyboard.CustomButton.init(frame: __C.CGRect) -&gt; CustomTamilKeyboard.CustomButton"
+                  moduleName = "CustomTamilKeyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ramkumarj/Documents/CustomTamilKeyboard/CustomTamilKeyboard/BaseTamilKeyboardView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

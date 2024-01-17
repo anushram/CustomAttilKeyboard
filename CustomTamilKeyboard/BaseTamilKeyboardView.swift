@@ -16,29 +16,124 @@ protocol iLLAGUKeyboardDelegate{
     func closeAction()
 }
 
+enum SwithchCaps: Int {
+    case singleCap
+    case doubleCap
+    case none
+}
+
+class CustomButton: UIButton {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configure()
+    }
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+            configure()
+    }
+    
+    func configure() {
+        if #available(iOS 15.0, *) {
+            self.configuration = .filled()
+            self.configuration?.buttonSize = .large
+            self.configuration?.baseBackgroundColor = .white
+            self.configuration?.titleLineBreakMode = .byClipping
+            self.configuration?.contentInsets = .init(top: 0, leading: 0, bottom: 0, trailing: 0)
+        }
+        self.titleLabel?.numberOfLines = 1;
+        self.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.titleLabel?.lineBreakMode = .byClipping
+    }
+    
+    var hightLightedTextColor: UIColor = .lightGray
+    
+    override open var isHighlighted: Bool {
+        didSet {
+            super.isHighlighted = isHighlighted
+            if isHighlighted {
+                backgroundColor = UIColor.darkGray
+                if #available(iOS 15.0, *) {
+                    self.configuration?.baseBackgroundColor = .darkGray
+                }
+            }else {
+                backgroundColor = UIColor.white
+                if #available(iOS 15.0, *) {
+                    self.configuration?.baseBackgroundColor = .white
+                }
+            }
+        }
+    }
+}
+
 class EnglishKeyboard: UIView {
     
-    @IBOutlet weak var deleteBtn: UIButton!
+    var timer: Timer?
+    
+    @IBOutlet weak var deleteBtn: UIButton! {
+        didSet {
+            deleteBtn.setImage(UIImage(systemName: "delete.left.fill"), for: .highlighted)
+            var longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.deleteContinuosText(sender:)))
+            self.deleteBtn.addGestureRecognizer(longPressRecognizer)
+        }
+    }
     @IBOutlet weak var worldBtn: UIButton!
     
-    @IBOutlet weak var doneBtn: UIButton!
+    @IBOutlet weak var doneBtn: UIButton! {
+        didSet {
+            doneBtn.setTitleColor(.lightGray, for: .highlighted)
+        }
+    }
     
-    var isCapitalTag: Bool = false{
+    @IBOutlet weak var capBtn: UIButton!
+    
+    @IBOutlet weak var spaceBtn: UIButton! {
+        didSet {
+            spaceBtn.setTitleColor(.lightGray, for: .highlighted)
+        }
+    }
+    
+    @IBOutlet weak var dotBtn: UIButton! {
+        didSet {
+            dotBtn.setTitleColor(.lightGray, for: .highlighted)
+        }
+    }
+    
+    var switchCap: SwithchCaps = .singleCap
+    
+    var isCapitalTag: Bool = true{
         didSet{
             buttons =  buttons.map { (button) in
                 let title = englishsmallLetters[button.tag]
-                button.setTitle(isCapitalTag ? title.capitalized : title, for: .normal)
+                UIView.performWithoutAnimation {
+                    button.setTitle(isCapitalTag ? title.capitalized : title, for: .normal)
+                }
                 return button
             }
         }
     }
     
     override func awakeFromNib() {
-        isCapitalTag = false
+        isCapitalTag = true
         self.setImagesForPriorVersions()
+        let singleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.changeSingleCapitalized(sender:)))
+        singleTapGesture.numberOfTapsRequired = 1
+        capBtn.addGestureRecognizer(singleTapGesture)
+        
+        let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.changeDoubleCapitalized(sender:)))
+        doubleTapGesture.numberOfTapsRequired = 2
+        capBtn.addGestureRecognizer(doubleTapGesture)
+        
+        singleTapGesture.require(toFail: doubleTapGesture)
     }
     
-    @IBOutlet var buttons: [UIButton]!
+    @IBOutlet var buttons: [CustomButton]! {
+        didSet {
+            buttons.forEach { button in
+                button.showsTouchWhenHighlighted = true
+                //button.setTitleColor(.lightGray, for: .highlighted)
+            }
+        }
+    }
     
     var keyboardDelegate: iLLAGUKeyboardDelegate?
     
@@ -49,11 +144,23 @@ class EnglishKeyboard: UIView {
     
     @IBAction func wordClickAction(sender: UIButton){
         let letter = englishsmallLetters[sender.tag]
-        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
-            sender.superview?.transform = .identity
-            self.keyboardDelegate?.didEnteredText(text: (self.isCapitalTag ? capitalEnglishUnicode[letter] : smallEnglishUnicode[letter]) ?? "")
-        }, completion: nil)
+        //        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        //        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+        //            sender.superview?.transform = .identity
+        //            self.keyboardDelegate?.didEnteredText(text: (self.isCapitalTag ? capitalEnglishUnicode[letter] : smallEnglishUnicode[letter]) ?? "")
+        //        }, completion: {_ in
+        //            if self.switchCap == .singleCap {
+        //                self.switchCap = .none
+        //                self.isCapitalTag = false
+        //                self.capBtn.setImage(UIImage(systemName: "arrowshape.up"), for: .normal)
+        //            }
+        //        })
+        self.keyboardDelegate?.didEnteredText(text: (self.isCapitalTag ? capitalEnglishUnicode[letter] : smallEnglishUnicode[letter]) ?? "")
+        if self.switchCap == .singleCap {
+            self.switchCap = .none
+            self.isCapitalTag = false
+            self.capBtn.setImage(UIImage(systemName: "arrowshape.up"), for: .normal)
+        }
     }
     
     @IBAction func deleteBackward(sender: UIButton){
@@ -64,8 +171,41 @@ class EnglishKeyboard: UIView {
         keyboardDelegate?.changeLanguage(lanCode: .ta, keyboardView: self, from: .en)
     }
     
-    @IBAction func changeCapitalized(sender: UIButton){
-        isCapitalTag = !isCapitalTag
+    @objc func changeSingleCapitalized(sender: UITapGestureRecognizer){
+        if self.switchCap == .doubleCap || self.switchCap == .singleCap {
+            isCapitalTag = false
+            self.switchCap = .none
+            //arrowshape.up
+            self.capBtn.setImage(UIImage(systemName: "arrowshape.up"), for: .normal)
+        }else if self.switchCap == .none {
+            isCapitalTag = true
+            self.switchCap = .singleCap
+            self.capBtn.setImage(UIImage(systemName: "arrowshape.up.fill"), for: .normal)
+        }
+    }
+    
+    @IBAction func dotAction(sender: UIButton) {
+        self.keyboardDelegate?.didEnteredText(text: String.kDot)
+    }
+    
+    
+    @objc func changeDoubleCapitalized(sender: UITapGestureRecognizer){
+        self.switchCap = .doubleCap
+        isCapitalTag = true
+        self.capBtn.setImage(UIImage(systemName: "capslock.fill"), for: .normal)
+    }
+    
+    @objc func deleteContinuosText(sender: UILongPressGestureRecognizer){
+        if sender.state == .began {
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleTimer(timer:)), userInfo: nil, repeats: true)
+            } else if sender.state == .ended || sender.state == .cancelled {
+                timer?.invalidate()
+                timer = nil
+            }
+    }
+    
+    @objc func handleTimer(timer: Timer) {
+        keyboardDelegate?.deleteTextBackWord()
     }
     
     @IBAction func doneAction(sender: UIButton){
@@ -95,8 +235,16 @@ class EnglishKeyboard: UIView {
 
 class BaseTamilView: UIView{
     
+    var timer: Timer?
+    
     @IBOutlet weak var returnBtn: UIButton!
-    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var deleteBtn: UIButton! {
+        didSet {
+            deleteBtn.setImage(UIImage(systemName: "delete.left.fill"), for: .highlighted)
+            var longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.deleteContinuosText(sender:)))
+            self.deleteBtn.addGestureRecognizer(longPressRecognizer)
+        }
+    }
     
     var keyboardDelegate: iLLAGUKeyboardDelegate?
     
@@ -117,16 +265,27 @@ class BaseTamilView: UIView{
         }
     }
     
-    @IBOutlet var uzirEzhuthuButtons: [UIButton]! {
+    @IBOutlet var uzirEzhuthuButtons: [CustomButton]! {
         didSet {
             uzirEzhuthuButtons.forEach { button in
-                button.titleLabel?.numberOfLines = 1;
-                button.titleLabel?.adjustsFontSizeToFitWidth = true
-                button.titleLabel?.lineBreakMode = .byClipping
+//                button.titleLabel?.numberOfLines = 1;
+//                button.titleLabel?.adjustsFontSizeToFitWidth = true
+//                button.titleLabel?.lineBreakMode = .byClipping
+//                button.setTitleColor(.lightGray, for: .highlighted)
             }
         }
     }
-    @IBOutlet var meiEzhuthuButtons: [UIButton]!
+    @IBOutlet var meiEzhuthuButtons: [CustomButton]! {
+        didSet {
+            meiEzhuthuButtons.forEach { button in
+//                button.titleLabel?.numberOfLines = 0;
+//                button.titleLabel?.adjustsFontSizeToFitWidth = true
+//                button.titleLabel?.lineBreakMode = .byClipping
+//                button.sizeToFit()
+//                button.titleLabel?.adjustsFontSizeToFitWidth = true
+            }
+        }
+    }
     
     var isUirEzhuthuChanged = false
     
@@ -140,28 +299,36 @@ class BaseTamilView: UIView{
     }
     
     @IBAction func didTabMeiEzhuthu(sender: UIButton){
-        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
-            sender.superview?.transform = .identity
-            self.keyboardDelegate?.didEnteredText(text: meiEzhuthu[sender.tag])
-            self.isUirEzhuthuChanged = true
-            self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged, meiEzhuthu: meiEzhuthu[sender.tag])
-        }, completion: nil)
+        /*
+         sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+         sender.superview?.transform = .identity
+         self.keyboardDelegate?.didEnteredText(text: meiEzhuthu[sender.tag])
+         self.isUirEzhuthuChanged = true
+         self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged, meiEzhuthu: meiEzhuthu[sender.tag])
+         }, completion: nil)
+         */
+        self.keyboardDelegate?.didEnteredText(text: meiEzhuthu[sender.tag])
+        self.isUirEzhuthuChanged = true
+        self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged, meiEzhuthu: meiEzhuthu[sender.tag])
     }
     
     @IBAction func didTabUirEzhuthu(sender: UIButton){
-        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
-            sender.superview?.transform = .identity
-                self.changeUirEzhuthu(index: sender.tag, isUirEzhuthu: self.isUirEzhuthuChanged)
-        }, completion: nil)
+        //        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+        //        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+        //            sender.superview?.transform = .identity
+        //                self.changeUirEzhuthu(index: sender.tag, isUirEzhuthu: self.isUirEzhuthuChanged)
+        //        }, completion: nil)
+        self.changeUirEzhuthu(index: sender.tag, isUirEzhuthu: self.isUirEzhuthuChanged)
     }
     
     private func reloadUirEzhuthu(isUirEzhuthu: Bool, meiEzhuthu: String = "") {
         uzirEzhuthuButtons = uzirEzhuthuButtons.enumerated().map { (index,button) in
             button.tag = index
             let title = self.isUirEzhuthuChanged ? "\(meiEzhuthu)\(uyirMeiEzhuthuUnicode[index])" : uyirEzhuthu[index]
-            button.setTitle(title, for: .normal)
+            UIView.performWithoutAnimation {
+                button.setTitle(title, for: .normal)
+            }
             return button
         }
     }
@@ -170,7 +337,9 @@ class BaseTamilView: UIView{
         meiEzhuthuButtons = meiEzhuthuButtons.enumerated().map { (index, button) in
             button.tag = index
             let title = meiEzhuthu[index]
-            button.setTitle(title, for: .normal)
+            UIView.performWithoutAnimation {
+                button.setTitle(title, for: .normal)
+            }
             return button
         }
     }
@@ -184,6 +353,19 @@ class BaseTamilView: UIView{
             keyboardDelegate?.didEnteredText(text: uyirMeiEzhuthuUnicode[index])
             reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
         }
+    }
+    
+    @objc func deleteContinuosText(sender: UILongPressGestureRecognizer){
+        if sender.state == .began {
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleTimer(timer:)), userInfo: nil, repeats: true)
+            } else if sender.state == .ended || sender.state == .cancelled {
+                timer?.invalidate()
+                timer = nil
+            }
+    }
+    
+    @objc func handleTimer(timer: Timer) {
+        self.backWord(sender: self.deleteBtn)
     }
     
     @IBAction func backWord(sender: UIButton){
@@ -242,12 +424,16 @@ class BaseTamilView: UIView{
     }
     
     @IBAction func changeUyirEzhuthu(sender: UIButton){
+        /*
+         self.isUirEzhuthuChanged = false
+         sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+         sender.superview?.transform = .identity
+         self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
+         }, completion: nil)
+         */
         self.isUirEzhuthuChanged = false
-        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
-            sender.superview?.transform = .identity
-                self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
-        }, completion: nil)
+        self.reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
     }
     
     @IBAction func changeSpecialKeyboard(sender: UIButton){
@@ -273,7 +459,15 @@ class BaseTamilView: UIView{
 
 class SpecialCharactersKeyboard: UIView{
     
-    @IBOutlet weak var deleteBtn: UIButton!
+    var timer: Timer?
+    
+    @IBOutlet weak var deleteBtn: UIButton! {
+        didSet {
+            deleteBtn.setImage(UIImage(systemName: "delete.left.fill"), for: .highlighted)
+            var longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(self.deleteContinuosText(sender:)))
+            self.deleteBtn.addGestureRecognizer(longPressRecognizer)
+        }
+    }
     @IBOutlet weak var worldBtn: UIButton!
     
     @IBOutlet weak var doneBtn: UIButton!
@@ -281,6 +475,12 @@ class SpecialCharactersKeyboard: UIView{
     var keyboardDelegate: iLLAGUKeyboardDelegate?
     
     @IBOutlet weak var specialChars: UIButton!
+    
+    @IBOutlet weak var spaceBtn: UIButton! {
+        didSet {
+            spaceBtn.setTitleColor(.lightGray, for: .highlighted)
+        }
+    }
     
     var selectedLanguage: SelectedLanguage = .en{
         didSet{
@@ -292,14 +492,24 @@ class SpecialCharactersKeyboard: UIView{
         didSet{
             specialCharButtons =  specialCharButtons.map { (button) in
                 let title = isAdditionalChars ? passwordSpecialChars[button.tag] : additionalSpecialChars[button.tag]
-                button.setTitle(title, for: .normal)
+                UIView.performWithoutAnimation {
+                    button.setTitle(title, for: .normal)
+                }
                 return button
             }
             specialChars.setTitle(isAdditionalChars ? Constants.kSpecialCharTitle : Constants.kNumberTitle, for: .normal)
         }
     }
     
-    @IBOutlet var specialCharButtons: [UIButton]!
+    @IBOutlet var specialCharButtons: [UIButton]! {
+        didSet {
+            for (index, button) in specialCharButtons.enumerated() {
+                button.tag = index
+                button.showsTouchWhenHighlighted = true
+                button.setTitleColor(.lightGray, for: .highlighted)
+            }
+        }
+    }
     
     class func instanceFromNib() -> SpecialCharactersKeyboard {
         let bundle = Bundle(for: SpecialCharactersKeyboard.self)
@@ -328,14 +538,33 @@ class SpecialCharactersKeyboard: UIView{
         keyboardDelegate?.deleteTextBackWord()
     }
     
+    @objc func deleteContinuosText(sender: UILongPressGestureRecognizer){
+        if sender.state == .began {
+            timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.handleTimer(timer:)), userInfo: nil, repeats: true)
+            } else if sender.state == .ended || sender.state == .cancelled {
+                timer?.invalidate()
+                timer = nil
+            }
+    }
+    
+    @objc func handleTimer(timer: Timer) {
+        keyboardDelegate?.deleteTextBackWord()
+    }
+    
     @IBAction func wordClickAction(sender: UIButton){
+        /*
+         let title = isAdditionalChars ? passwordSpecialChars[sender.tag] : additionalSpecialChars[sender.tag]
+         let letter = isAdditionalChars ? passwordSpecialUnicodeChars[title]  : additionalSpecialUnicodeChars[title]
+         sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
+         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
+         sender.superview?.transform = .identity
+         self.keyboardDelegate?.didEnteredText(text: letter!)
+         }, completion: nil)
+         */
+        
         let title = isAdditionalChars ? passwordSpecialChars[sender.tag] : additionalSpecialChars[sender.tag]
         let letter = isAdditionalChars ? passwordSpecialUnicodeChars[title]  : additionalSpecialUnicodeChars[title]
-        sender.superview?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 6.0, options: [.allowUserInteraction], animations: {
-            sender.superview?.transform = .identity
-            self.keyboardDelegate?.didEnteredText(text: letter!)
-        }, completion: nil)
+        self.keyboardDelegate?.didEnteredText(text: letter!)
     }
     
     @IBAction func wordexclamationAction(sender: UIButton){
@@ -344,6 +573,10 @@ class SpecialCharactersKeyboard: UIView{
     
     @IBAction func changeSpecialChars(sender: UIButton){
         isAdditionalChars = !isAdditionalChars
+    }
+    
+    @IBAction func space(sender: UIButton){
+        keyboardDelegate?.didEnteredText(text: String.kSpace)
     }
     
     private func setImagesForPriorVersions(){
