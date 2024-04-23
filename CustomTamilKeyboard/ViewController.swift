@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         CustomKeyboardManager.shared.enabled = true
-        CustomKeyboardManager.shared.language = "ta"
+        CustomKeyboardManager.shared.language = "en"
         CustomKeyboardManager.shared.onDoneEventReceived = { target in
             if target is UITextView{
             }else if target is UITextField{

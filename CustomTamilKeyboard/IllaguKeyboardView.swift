@@ -140,6 +140,7 @@ open class IllaguKeyboardView: UIView, iLLAGUKeyboardDelegate {
         customInputView.inputTextField = self.inputTextField
         customInputView.inputTextView = self.inputTextView
         customInputView.keyboardDelegate = self
+        customInputView.addCursorChangeObserver()
         self.frame.size.height = (customInputView.frame.size.height + 60)
         tamilView = customInputView
         contentView.addSubview(customInputView)

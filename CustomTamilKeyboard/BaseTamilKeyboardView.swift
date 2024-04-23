@@ -291,11 +291,43 @@ class BaseTamilView: UIView{
     
     override func awakeFromNib() {
         setImagesForPriorVersions()
+//        addCursorChangeObserver()
     }
     
     class func instanceFromNib() -> BaseTamilView {
         let bundle = Bundle(for: BaseTamilView.self)
         return UINib(nibName: String(describing: BaseTamilView.self), bundle: bundle).instantiate(withOwner: self, options: nil)[0] as! BaseTamilView
+    }
+    
+    func addCursorChangeObserver(){
+        inputTextField?.addObserver(self, forKeyPath: "selectedTextRange", options: .new, context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "selectedTextRange" && inputTextField == object as? UITextField{
+            print("Yes")
+            guard let selectedRange = inputTextField?.selectedTextRange else {return}
+            if let lastChar = inputTextField?.getTextFromRange(textRange: selectedRange)?.unicodeScalars.last{
+                if uyirMeiEzhuthuUnicode.contains(String(lastChar)){
+                   // if let txt = text.last!.unicodeScalars.first{
+                    if let txt = inputTextField?.getTextFromRange(textRange: selectedRange, offSet: -2)?.unicodeScalars.first{
+                        if meiEzhuthu.contains(String(txt)){
+                            isUirEzhuthuChanged = false
+                            reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged)
+                        }
+                    }
+                }else if meiEzhuthu.contains(String(lastChar)) {
+                    isUirEzhuthuChanged = true
+                    reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged, meiEzhuthu: String(String(lastChar)))
+                }else{
+                    isUirEzhuthuChanged = false
+                    reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged)
+                }
+            }else{
+                self.isUirEzhuthuChanged = false
+                reloadUirEzhuthu(isUirEzhuthu: self.isUirEzhuthuChanged)
+            }
+        }
     }
     
     @IBAction func didTabMeiEzhuthu(sender: UIButton){
@@ -387,15 +419,33 @@ class BaseTamilView: UIView{
     
     private func reloadBackWord(text: String){
         if text.count > 0{
-            if (text.last?.unicodeScalars.count)! > 1{
+            if (text.last?.unicodeScalars.count)! > 0{
                 //Check
-                if let lastChar = text.last?.unicodeScalars.last{
+                guard let selectedRange = inputTextField?.selectedTextRange else {return}
+                if let lastChar = inputTextField?.getTextFromRange(textRange: selectedRange)?.unicodeScalars.last{
                     if uyirMeiEzhuthuUnicode.contains(String(lastChar)){
-                        if let txt = text.last!.unicodeScalars.first{
-                            isUirEzhuthuChanged = true
-                            reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged, meiEzhuthu: String(txt))
+                       // if let txt = text.last!.unicodeScalars.first{
+                        if let txt = inputTextField?.getTextFromRange(textRange: selectedRange, offSet: -2)?.unicodeScalars.first{
+                            if meiEzhuthu.contains(String(txt)){
+                                isUirEzhuthuChanged = true
+                                reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged, meiEzhuthu: String(txt))
+                            }
                         }
-                    }else{
+                    }else if meiEzhuthu.contains(String(lastChar)){
+                        if let txt = inputTextField?.getTextFromRange(textRange: selectedRange, offSet: -2)?.unicodeScalars.first{
+                            if meiEzhuthu.contains(String(txt)){
+                                isUirEzhuthuChanged = true
+                                reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged, meiEzhuthu: String(txt))
+                            }else {
+                                isUirEzhuthuChanged = false
+                                reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged)
+                            }
+                        }else {
+                            isUirEzhuthuChanged = false
+                            reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged)
+                        }
+                        
+                    }else {
                         isUirEzhuthuChanged = false
                         reloadUirEzhuthu(isUirEzhuthu: isUirEzhuthuChanged)
                     }
@@ -586,4 +636,16 @@ class SpecialCharactersKeyboard: UIView{
         }
     }
     
+}
+extension UITextField {
+    func getTextFromRange(textRange: UITextRange, offSet: Int = -1) -> String?{
+        guard let newPosition = self.position(from: (textRange.start), offset: offSet) else {return nil}
+        guard let newRange = self.textRange(from: newPosition, to: textRange.start) else {return nil}
+        return self.text(in: newRange)
+    }
+    func getNewRangeToReplaceText(textRange: UITextRange, offSet: Int = -1) -> UITextRange? {
+        guard let newPosition = self.position(from: textRange.start, offset: offSet) else {return nil}
+        guard let newRange = self.textRange(from: newPosition, to: textRange.start) else {return nil}
+        return newRange
+    }
 }

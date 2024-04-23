@@ -17,13 +17,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogJ-yD-BNO">
-                    <rect key="frame" x="0.0" y="204" width="386" height="50"/>
+                    <rect key="frame" x="0.0" y="184" width="386" height="70"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FD0-iG-7xY" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="155" y="10" width="134" height="30"/>
+                            <rect key="frame" x="155" y="10" width="134" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKE-2N-nff">
-                                    <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="134" height="50"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="space">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,10 +56,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkX-qR-uEu" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="297" y="9.5" width="82" height="30"/>
+                            <rect key="frame" x="297" y="9.5" width="82" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xig-yg-R6X">
-                                    <rect key="frame" x="0.0" y="0.0" width="82" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="82" height="50"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -95,13 +95,13 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="pRY-EC-RlM">
-                            <rect key="frame" x="8" y="10" width="138" height="30"/>
+                            <rect key="frame" x="8" y="10" width="138" height="50"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnG-DJ-4Co" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zx7-Kb-LPD">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="49"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="123">
@@ -135,10 +135,10 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KP-MN-gRc" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="49" y="0.0" width="40" height="30"/>
+                                    <rect key="frame" x="49" y="0.0" width="40" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLn-nB-hlX">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="network" catalog="system">
@@ -172,10 +172,10 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJt-cB-Wg2" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="98" y="0.0" width="40" height="30"/>
+                                    <rect key="frame" x="98" y="0.0" width="40" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0Q-Tv-P7z">
-                                            <rect key="frame" x="0.0" y="0.0" width="40" height="29"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="49"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title=".">
@@ -217,6 +217,7 @@
                     <color key="backgroundColor" red="0.90588235289999997" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="pRY-EC-RlM" firstAttribute="leading" secondItem="ogJ-yD-BNO" secondAttribute="leading" constant="8" id="1dY-8U-sRd"/>
+                        <constraint firstAttribute="height" constant="70" id="6id-g3-B0L"/>
                         <constraint firstAttribute="bottom" secondItem="FD0-iG-7xY" secondAttribute="bottom" constant="10" id="89Q-gA-gmG"/>
                         <constraint firstAttribute="trailing" secondItem="FkX-qR-uEu" secondAttribute="trailing" constant="7" id="Fdl-6w-q4m"/>
                         <constraint firstItem="pRY-EC-RlM" firstAttribute="top" secondItem="ogJ-yD-BNO" secondAttribute="top" constant="10" id="Fyj-n3-mfN"/>
@@ -231,10 +232,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esZ-Ng-Sv6" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="8" y="157" width="40" height="33"/>
+                    <rect key="frame" x="8" y="144" width="40" height="26"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1t-gk-iiv">
-                            <rect key="frame" x="0.0" y="0.0" width="40" height="33"/>
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="26"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="arrowshape.up.fill" catalog="system">
@@ -266,13 +267,13 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6wg-6A-nKZ">
-                    <rect key="frame" x="64" y="157" width="258" height="33"/>
+                    <rect key="frame" x="64" y="144" width="258" height="26"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOC-Jd-8c4" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u59-gf-tGK" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="z">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -306,10 +307,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttf-Us-hpF" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="38" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="38" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xn-KE-rzJ" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="x">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -343,10 +344,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-7i-gRG" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="76" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="76" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9O-Lj-BF8" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="c">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -380,10 +381,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evl-ky-0Fi" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="114" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="114" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFH-zT-Kg2" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="v">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -417,10 +418,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7E-Dz-H1W" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="152" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="152" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B99-ZB-yTn" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="b">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -454,10 +455,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sqy-fs-Pqj" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="190" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="190" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57A-EM-Onw" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="n">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -491,10 +492,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnO-te-WLT" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="228" y="0.0" width="30" height="33"/>
+                            <rect key="frame" x="228" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-ll-NJj" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="m">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -530,10 +531,10 @@
                     </subviews>
                 </stackView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-xV-H5p" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                    <rect key="frame" x="338" y="157" width="40" height="33"/>
+                    <rect key="frame" x="338" y="144" width="40" height="26"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS7-oF-bCm">
-                            <rect key="frame" x="0.0" y="0.0" width="40" height="33.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="26.5"/>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" image="delete.left" catalog="system">
@@ -568,13 +569,13 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Mh-g8-OWZ">
-                    <rect key="frame" x="26" y="110.5" width="334" height="32.5"/>
+                    <rect key="frame" x="26" y="104" width="334" height="26"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Y3-J5-CFK" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYR-3X-vv6" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="a">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -608,10 +609,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFN-ce-5rd" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="38" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="38" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGT-Tf-LzM" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="s">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -645,10 +646,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-iO-4vS" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="76" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="76" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oF-9T-B85" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="d">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -682,10 +683,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osa-GO-EJH" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="114" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="114" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2e-0k-JAd" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="f">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -719,10 +720,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OH3-P8-zVv" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="152" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="152" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhn-Au-gSU" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="g">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -756,10 +757,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-N5-Dd1" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="190" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="190" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv3-RA-ctw" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="h">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -793,10 +794,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEr-ZS-V2r" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="228" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="228" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYW-Wi-3u9" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="j">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -830,10 +831,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQl-Kc-dIf" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="266" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="266" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXG-jX-ThP" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="k">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -867,10 +868,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gr1-Bf-AHv" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="304" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="304" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0x-BV-RKT" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="l">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -906,13 +907,13 @@
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qHJ-nz-rX6">
-                    <rect key="frame" x="7" y="64" width="372" height="32.5"/>
+                    <rect key="frame" x="7" y="64" width="372" height="26"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfI-Af-WWG" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ni8-Z6-Iqw" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <color key="tintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="q">
@@ -948,10 +949,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBI-PO-t3R" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="38" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="38" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxw-9A-oyV" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="w">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -985,10 +986,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZ4-Bg-eYu" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="76" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="76" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-F0-ozK" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="e">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1022,10 +1023,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAP-F4-vwG" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="114" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="114" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msu-pt-VEx" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="r">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1059,10 +1060,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKt-y4-Uvu" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="152" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="152" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbu-j6-75C" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="t">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1096,10 +1097,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWx-YV-QJS" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="190" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="190" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-Um-GRN" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="y">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1133,10 +1134,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPp-Xi-53d" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="228" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="228" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNt-Ox-vir" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="u">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1170,10 +1171,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5t-t5-df5" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="266" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="266" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-Z6-VFP" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="i">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1207,10 +1208,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qga-C8-lcA" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="304" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="304" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHc-sn-CWx" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="o">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1244,10 +1245,10 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-FT-jns" customClass="ShadowView" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                            <rect key="frame" x="342" y="0.0" width="30" height="32.5"/>
+                            <rect key="frame" x="342" y="0.0" width="30" height="26"/>
                             <subviews>
                                 <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2H-vF-V31" customClass="CustomButton" customModule="CustomTamilKeyboard" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="30" height="32.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="26"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="p">
                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1328,7 +1329,6 @@
                 <constraint firstItem="ogJ-yD-BNO" firstAttribute="top" secondItem="6wg-6A-nKZ" secondAttribute="bottom" constant="14" id="Ide-K8-Rd6"/>
                 <constraint firstItem="ogJ-yD-BNO" firstAttribute="top" secondItem="esZ-Ng-Sv6" secondAttribute="bottom" constant="14" id="Ktd-3C-VdT"/>
                 <constraint firstItem="qHJ-nz-rX6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="OWY-JL-UNz"/>
-                <constraint firstItem="ogJ-yD-BNO" firstAttribute="height" secondItem="6wg-6A-nKZ" secondAttribute="height" multiplier="1.53846" id="bzZ-c7-KqH"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9xM-H4-k6M" secondAttribute="trailing" constant="8" id="cBq-K2-B3x"/>
                 <constraint firstItem="ogJ-yD-BNO" firstAttribute="top" secondItem="GG1-xV-H5p" secondAttribute="bottom" constant="14" id="cUN-gc-7yA"/>
                 <constraint firstItem="ogJ-yD-BNO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hZu-HF-prF"/>
